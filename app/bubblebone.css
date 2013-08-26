@@ -1,0 +1,32 @@
+
+#description {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#description #title {
+    font-size: 200%;
+    font-weight: bold;
+    border-bottom: solid;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#description #summary {
+    font-size: 120%;
+}
+
+#selectionForm {
+    margin: 20px 0px 20px 0px;
+}
+
+.bar {
+    height: 4px;
+    background-color: black;
+    position: absolute;
+}
+
+#draw-target {
+    background-color: yellow;
+    position: relative;
+    height: 416px;
+}

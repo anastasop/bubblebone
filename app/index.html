@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <title>BubbleBone</title>
+
+  <link rel="stylesheet" type="text/css" href="bubblebone.css"/>
+
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="underscore.js"></script>
+  <script type="text/javascript" src="json2.js"></script>
+  <script type="text/javascript" src="backbone.js"></script>
+  <script type="text/javascript" src="bubblebone.js"></script>
+</head>
+<body>
+
+
+<div id="description">
+  <div id="title">BubbleBone is a visualization of bubblesort with backbone.js</div>
+  <div id="summary">
+<p>
+This is a simple application to demonstrate usage of <a href="http://backbonejs.org">backbone.js</a>
+for single page applications. The concept is as follows: The script asks for a list of random integers,
+stored in the server under the name provided by the user. Then, the list is sorted with bubble sort
+and the sorted list is stored in the server. Backbone.js uses its internal event dispather to sync the
+list with the server by calling the REST api and animate the algorighm by updating the graphical
+representation of the list whenever something changes.
+To demo, just enter a name in the area below and click <em>Run</em>. It is recommended to keep the browser
+window side to side with the server window to watch how the list is synced.
+  </div>
+</div>
+
+<div id="selectionForm">
+<strong>Name: </strong><input id='barsName' type='text'/><button id='sortButton'>Run</button>
+</div>
+
+<div id="draw-target"></div>
+
+
+</body>
